@@ -26,6 +26,10 @@ roidb extended format [image_index]
 
 import numpy as np
 import numpy.random as npr
+import sys
+import os
+this_dir = os.path.dirname(__file__)
+sys.path.insert(0, os.path.join(this_dir, '..', '..', '..', 'RoITransformer_DOTA')) # ${RoI_ROOT}
 
 from utils.image import get_image, tensor_vstack
 from bbox.bbox_transform import bbox_overlaps, bbox_transform

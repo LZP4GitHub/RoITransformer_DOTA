@@ -24,7 +24,7 @@ mmdetection version is on the way
 1. Clone the RoI Transformer repository, and we'll call the directory that you cloned RoI Transformer as ${RoI_ROOT}
 
 ```
-git clone git@github.com:dingjiansw101/RoITransformer_DOTA.git
+git clone https://github.com/dingjiansw101/RoITransformer_DOTA.git
 ```
 
 2. For Windows users, run ``cmd .\init.bat``. For Linux user, run `sh ./init.sh`. The scripts will build cython module automatically and create some folders.
@@ -60,7 +60,7 @@ git clone git@github.com:dingjiansw101/RoITransformer_DOTA.git
 	```
 	3.5 For advanced users, you may put your Python packge into `./external/mxnet/$(YOUR_MXNET_PACKAGE)`, and modify `MXNET_VERSION` in `./experiments/rfcn/cfgs/*.yaml` to `$(YOUR_MXNET_PACKAGE)`. Thus you can switch among different versions of MXNet quickly.
 
-4. complie dota_kit
+4. compile dota_kit
 
     ```
     sudo apt-get install swig
@@ -90,7 +90,7 @@ git clone git@github.com:dingjiansw101/RoITransformer_DOTA.git
 
    ```
    cd ${RoI_ROOT}
-   mkdir data
+   mkdir -p data
    cd data
    ln -s path_to_data dota_1024
    ```
@@ -104,7 +104,7 @@ We provide trained convnet models.
     Make sure it look like this:
     ```
         ./output/rcnn/DOTA/resnet_v1_101_dota_RoITransformer_trainval_rcnn_end2end/train/rcnn_dota-0040.params
-        ./output/fpn/DOTA/resnet_v1_101_dota_rotbox_light_head_RoITransformer_trainval_fpn_end2end/train/fpn_DOTA_oriented-0008.params
+        ./output/fpn/DOTA/resnet_v1_101_dota_rotbox_light_head_RoITransformer_trainval_fpn_end2end/train/fpn_DOTA_oriented-0010.params
     ```
 ## Training & Testing
 
